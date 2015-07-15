@@ -1,0 +1,30 @@
+{
+  "name": "generator-laravel-eden",
+  "version": "0.1.0",
+  "description": "Yeoman generator to quickstart Laravel or Lumen project",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "samanthamichele7/generator-laravel-eden",
+  "author": {
+    "name": "Samantha Geitz",
+    "email": "samanthamichele7@gmail.com",
+    "url": "https://github.com/samanthamichele7"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.19.0",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
