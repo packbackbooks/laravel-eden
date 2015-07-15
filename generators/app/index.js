@@ -56,8 +56,8 @@ module.exports = yeoman.generators.Base.extend({
       },
       {
         type: 'confirm',
-        name: 'infrastructure',
-        message: 'Would you like to install the Packback infrastructure package?',
+        name: 'git',
+        message: 'Would you like to initialize a Git repository?',
         default: true
       },
       {
@@ -138,11 +138,11 @@ module.exports = yeoman.generators.Base.extend({
       );
       this.fs.copy(
         this.templatePath('editorconfig'),
-        this.destinationPath(process.cwd() + '/' + this.props.name + '/.editorconfig')
+        this.destinationPath('.editorconfig')
       );
       this.fs.copy(
         this.templatePath('jshintrc'),
-        this.destinationPath(process.cwd() + '/' + this.props.name + '/.jshintrc')
+        this.destinationPath('.jshintrc')
       );
     },
 
@@ -184,8 +184,24 @@ module.exports = yeoman.generators.Base.extend({
 
       this.log(chalk.green('Codeception installed!'));
     }
+
+    if ( this.props.git ){
+      this.spawnCommand('git', ['init']);
+    }
     
     this.installDependencies();
     done();
+  },
+
+  end: function () {
+    this.spawnCommand('rm', ['.gitignore'])
+      .on('exit', function(){
+          this.fs.copy(
+            this.templatePath('gitignore'),
+            this.destinationPath('.gitignore')
+          );
+        }.bind(this));    
+
+    this.log(chalk.green('Done!'));
   }
 });
