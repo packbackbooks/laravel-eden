@@ -7,7 +7,7 @@
 
 ### What is Laravel Eden?
 
-![](http://i.imgur.com/KdrynU3)
+![Imgur](http://i.imgur.com/KdrynU3.jpg)
 
 It's a quick way to get Packback-specific Laravel and Lumen microservices bootstrapped and off the ground!
 Quickly install Laravel or Lumen, the handful of packages we use, testing with Codeception, and 
