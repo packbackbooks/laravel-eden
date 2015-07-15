@@ -1,46 +1,36 @@
-# generator-laravel-eden [![Build Status](https://secure.travis-ci.org/samanthamichele7/generator-laravel-eden.png?branch=master)](https://travis-ci.org/samanthamichele7/generator-laravel-eden)
+# Laravel Eden
 
 > [Yeoman](http://yeoman.io) generator
 
 
 ## Getting Started
 
-### What is Yeoman?
+### What is Laravel Eden?
 
-Trick question. It's not a thing. It's this guy:
+It's a quick way to get Packback-specific Laravel and Lumen microservices bootstrapped and off the ground!
+Quickly install Laravel or Lumen, the handful of packages we use, testing with Codeception, and 
+set up the folder structure. Yay!
 
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
+You'll first need to install Yeoman:
 
 ```bash
 npm install -g yo
 ```
 
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
-To install generator-laravel-eden from npm, run:
+We don't have the generator on npm yet, so for now, pull this repository down and navigate to its folder,
+then run:
 
 ```bash
-npm install -g generator-laravel-eden
+npm link
 ```
 
-Finally, initiate the generator:
+This will install the project dependencies and symlink a global module to the local file.
+
+Finally, to run the generator:
 
 ```bash
 yo laravel-eden
 ```
-
-### Getting To Know Yeoman
-
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
-
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
-
 
 ## License
 
